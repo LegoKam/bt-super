@@ -1,18 +1,11 @@
-export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
-
-  // setup image columns
-  [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
+export default async function decorate(block) {
+  const rows = [...block.children];
+  rows.forEach((row) => {
+    const cells = [...row.children];
+    cells.forEach((cell) => {
+      // No structural changes needed — EDS renders the two cells
+      // as the two columns, styled via CSS flex.
+      cell.classList.add('columns-col');
     });
   });
 }

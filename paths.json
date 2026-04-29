@@ -1,8 +1,0 @@
-{
-  "mappings": [
-    "/content/bt-super/:/"
-  ],
-  "includes": [
-    "/content/bt-super/"
-  ]
-}

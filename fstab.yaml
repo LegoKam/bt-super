@@ -1,5 +1,0 @@
-mountpoints:
-  /:
-    url: "https://author-p152232-e1579596.adobeaemcloud.com/bin/franklin.delivery/LegoKam/bt-super/main"
-    type: "markup"
-    suffix: ".html"
