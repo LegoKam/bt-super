@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/"
+    "/content/bt-super/:/"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/bt-super/"
   ]
 }
